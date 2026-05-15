@@ -87,9 +87,10 @@ bitrate="2500k"
 
 ---
 
-## 🎞 Prévia da Automação
+# 🎞 Prévia da Automação
 
-![Preview do Projeto](preview.gif)
+![Preview do Projeto](./preview.gif)
+
 
 # 📈 Conceitos Aplicados
 
