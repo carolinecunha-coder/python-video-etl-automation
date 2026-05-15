@@ -14,6 +14,7 @@ O objetivo foi criar um pipeline otimizado para web, compatível com GitHub e na
 ✅ Correção de incompatibilidades do FFmpeg  
 ✅ Otimização para GitHub  
 ✅ Reprodução HTML5  
+✅ Conversão de vídeo para GIF animado  
 
 ---
 
@@ -24,6 +25,7 @@ O objetivo foi criar um pipeline otimizado para web, compatível com GitHub e na
 - FFmpeg
 - GitHub
 - HTML5 Video
+- EZGIF
 
 ---
 
@@ -33,6 +35,7 @@ O objetivo foi criar um pipeline otimizado para web, compatível com GitHub e na
 ajuste_video.py/
 ├── limpar_video.py
 ├── projeto_github.mp4
+├── preview.gif
 └── README.md
 ```
 
@@ -79,11 +82,15 @@ bitrate="2500k"
 
 ---
 
-# 🎬 Demonstração do Projeto
+## ✅ Conversão para GIF
 
-## 📹 Vídeo Completo
+Utilização da ferramenta EZGIF para gerar prévia animada da automação exibida diretamente no README do GitHub.
 
-[▶ Clique aqui para assistir ao vídeo completo](./projeto_github.mp4)
+Configurações utilizadas:
+- 720p
+- FPS 10
+- Loop infinito
+- Otimização para web
 
 ---
 
@@ -91,6 +98,53 @@ bitrate="2500k"
 
 ![Preview do Projeto](./preview.gif)
 
+---
+
+# 📹 Vídeo Completo
+
+[▶ Clique aqui para assistir ao vídeo completo](./projeto_github.mp4)
+
+---
+
+# 💻 Código Principal
+
+```python
+import os
+from moviepy import VideoFileClip
+
+pasta = r"C:\Projetos\ajuste_video.py"
+
+arquivo_atual = os.path.join(pasta, "projeto_github.mp4")
+
+video = VideoFileClip(arquivo_atual)
+
+largura = video.w
+altura = video.h
+
+if largura % 2 != 0:
+    largura -= 1
+
+if altura % 2 != 0:
+    altura -= 1
+
+video = video.resized((largura, altura))
+
+video.write_videofile(
+    "video_otimizado.mp4",
+    codec="libx264",
+    audio_codec="aac",
+    bitrate="2500k"
+)
+```
+
+---
+
+# 🌐 Ferramenta Utilizada para Conversão GIF
+
+EZGIF:  
+https://ezgif.com/video-to-gif
+
+---
 
 # 📈 Conceitos Aplicados
 
