@@ -1,31 +1,30 @@
-# 🎬 Pipeline de Automação e ETL de Vídeo com Python
+# 🎥 Pipeline de Automação e ETL de Mídia com Python
 
-Projeto desenvolvido para automatizar o tratamento, padronização, compressão e concatenação de vídeos utilizando Python, MoviePy e FFmpeg.
+Este projeto foi desenvolvido para criar um fluxo automatizado de tratamento, redimensionamento, compressão e concatenação de arquivos de vídeo.
 
-O objetivo principal foi aplicar conceitos de Engenharia de Dados e ETL (Extract, Transform, Load) em arquivos de mídia não estruturados, simulando um pipeline real de processamento audiovisual.
-
----
-
-# 🚀 Objetivos do Projeto
-
-✔ Automatizar processamento de vídeos  
-✔ Corrigir arquivos corrompidos  
-✔ Padronizar resolução e codecs  
-✔ Reduzir tamanho final do arquivo  
-✔ Gerar saída compatível com navegadores web  
-✔ Aplicar conceitos de ETL em mídia digital  
+O objetivo principal foi aplicar conceitos de Engenharia de Dados e ETL (Extract, Transform, Load) no processamento de mídias não estruturadas utilizando Python.
 
 ---
 
-# 🛠 Tecnologias Utilizadas
+# 🛠 Tecnologias e Bibliotecas
 
-| Tecnologia | Finalidade |
-|---|---|
-| Python 3.11 | Lógica principal |
-| MoviePy | Manipulação e renderização |
-| FFmpeg | Conversão e tratamento de mídia |
-| VS Code | Desenvolvimento |
-| Git & GitHub | Versionamento |
+- **Python 3.11**
+- **MoviePy**
+- **FFmpeg**
+- **Static FFmpeg**
+- **HTML5 Video**
+- **GitHub**
+
+---
+
+# 🚀 Funcionalidades
+
+✅ Leitura automatizada de vídeos  
+✅ Padronização de resolução  
+✅ Conversão de codecs incompatíveis  
+✅ Compressão inteligente para web  
+✅ Compatibilidade com navegadores  
+✅ Geração de vídeo otimizado para GitHub  
 
 ---
 
@@ -36,146 +35,115 @@ python-video-etl-automation/
 │
 ├── ajuste_video.py/
 │   ├── limpar_video.py
-│   └── projeto_final_web.mp4
+│   ├── projeto_github.mp4
 │
 └── README.md
 ```
 
 ---
 
-# ⚙️ Funcionalidades Implementadas
+# 🧠 Desafios Técnicos Solucionados (Data Cleaning & Otimização)
 
-## ✅ Tratamento de Arquivo Corrompido
-
-Correção do erro crítico:
+### 1. Tratamento de Arquivo Corrompido
+Correção do erro crítico de leitura de frames:
 
 ```python
 OSError: failed to read the first frame
 ```
 
-Utilizando reconstrução de metadados através do FFmpeg.
+Reconstruindo os metadados dos vídeos através do FFmpeg.
 
 ---
 
-## ✅ Padronização de Resolução
-
-Todos os vídeos foram convertidos dinamicamente para:
+### 2. Padronização de Resolução
+Correção automática de dimensões incompatíveis com `libx264`:
 
 ```python
-1280x720 (HD)
+width not divisible by 2
+height not divisible by 2
 ```
 
-Garantindo integridade visual entre diferentes arquivos de origem.
+Ajustando largura e altura para valores pares.
 
 ---
 
-## ✅ Compatibilidade Web
+### 3. Compatibilidade de Codecs
+Conversão otimizada utilizando:
 
-Configuração otimizada utilizando:
+- `libx264`
+- `aac`
+- `yuv420p`
+
+Garantindo reprodução em:
+- GitHub
+- Navegadores
+- Players HTML5
+
+---
+
+### 4. Compressão para Web
+Redução inteligente de bitrate:
 
 ```python
-libx264
-aac
+bitrate="2500k"
 ```
 
-Permitindo reprodução fluida diretamente em navegadores.
+Diminuindo drasticamente o tamanho do arquivo sem perda visual relevante.
 
 ---
 
-## ✅ Compressão Inteligente
-
-Redução do arquivo final:
-
-| Antes | Depois |
-|---|---|
-| 53,3 MB | 30,1 MB |
-
-Com otimização de bitrate para carregamento mais rápido no GitHub.
-
----
-
-# 🧠 Conceitos Aplicados
-
-- ETL de mídia
-- Data Cleaning
-- Engenharia de Dados
-- Processamento de arquivos
-- Compressão de mídia
-- Padronização de dados não estruturados
-- Automação com Python
-
----
-
-# 🎥 Demonstração do Resultado Final
-
-Assista abaixo ao vídeo processado pelo pipeline:
+# 🎬 Demonstração do Resultado Final
 
 <video 
-src="https://github.com/carolinecunha-coder/python-video-etl-automation/raw/main/ajuste_video.py/projeto_final_web.mp4" 
+src="https://github.com/carolinecunha-coder/python-video-etl-automation/raw/main/ajuste_video.py/projeto_github.mp4" 
 controls 
 width="900">
 </video>
 
-<br>
+---
 
-👉 Caso o player não carregue:
+# ▶ Assistir Diretamente
 
-[Clique aqui para assistir diretamente](https://github.com/carolinecunha-coder/python-video-etl-automation/raw/main/ajuste_video.py/projeto_final_web.mp4)
+👉 [Clique aqui para assistir ao vídeo final](https://github.com/carolinecunha-coder/python-video-etl-automation/raw/main/ajuste_video.py/projeto_github.mp4)
 
 ---
 
-# ▶️ Como Executar o Projeto
+# 💻 Exemplo de Código Utilizado
 
-## 1️⃣ Clone o repositório
+```python
+from moviepy import VideoFileClip
 
-```bash
-git clone https://github.com/carolinecunha-coder/python-video-etl-automation.git
+video = VideoFileClip("projeto_final_web.mp4")
+
+video.write_videofile(
+    "projeto_github.mp4",
+    codec="libx264",
+    audio_codec="aac",
+    bitrate="2500k"
+)
 ```
 
 ---
 
-## 2️⃣ Acesse a pasta
+# 📈 Conceitos Aplicados
 
-```bash
-cd python-video-etl-automation
-```
-
----
-
-## 3️⃣ Instale as dependências
-
-```bash
-pip install moviepy
-```
-
----
-
-## 4️⃣ Execute o projeto
-
-```bash
-python ajuste_video.py
-```
-
----
-
-# 📈 Resultados Obtidos
-
-✔ Correção automática de vídeos problemáticos  
-✔ Redução significativa de tamanho  
-✔ Compatibilidade multiplataforma  
-✔ Pipeline automatizado de mídia  
-✔ Estrutura preparada para escalabilidade  
+- Engenharia de Dados
+- ETL
+- Data Cleaning
+- Compressão de mídia
+- Automação com Python
+- Manipulação de vídeo
+- Tratamento de erros
+- Otimização para Web
+- Compatibilidade multiplataforma
 
 ---
 
 # 👩‍💻 Autora
 
-## Caroline Cunha
-
+**Caroline Cunha**  
 Especialista em Investimentos, Inteligência de Mercado & Seguros de Vida  
 Em transição para Data Analytics e Engenharia de Dados.
 
-🔗 GitHub:  
+GitHub:  
 https://github.com/carolinecunha-coder
-
----
