@@ -79,17 +79,17 @@ bitrate="2500k"
 
 ---
 
-# 🎬 Demonstração do Resultado Final
+# 🎬 Demonstração do Projeto
 
-👉 Clique na imagem abaixo para assistir ao vídeo:
+## 📹 Vídeo Completo
 
-[![Assistir vídeo](https://img.shields.io/badge/▶-Assistir%20Demonstração-blue?style=for-the-badge)](./projeto_github.mp4)
+[▶ Clique aqui para assistir ao vídeo completo](./projeto_github.mp4)
 
 ---
 
-# ▶ Link Direto
+## 🎞 Prévia da Automação
 
-[Abrir vídeo diretamente](./projeto_github.mp4)
+![Preview do Projeto](preview.gif)
 
 # 📈 Conceitos Aplicados
 
