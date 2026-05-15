@@ -13,8 +13,5 @@ Este projeto foi desenvolvido para criar um fluxo automatizado de tratamento, re
 3. **Compatibilidade de Codecs:** Configuração de saída otimizada com os codecs `libx264` e `aac` para garantir a reprodução fluida diretamente em navegadores web.
 4. **Compressão Eficiente para Web:** Ajuste fino de taxa de dados (`bitrate="4000k"`), reduzindo o tamanho do arquivo final de 53,3 MB para 30,1 MB. Isso eliminou os alertas de limite do GitHub e otimizou o carregamento da página para os visitantes.
 
-## 🎬 Demonstração do Resultado Final
+<img width="1016" height="714" alt="image" src="https://github.com/user-attachments/assets/e09227ba-0725-4b4d-add6-52e9833bc4c5" />
 
-Abra o arquivo de vídeo convertido diretamente através do link abaixo para assistir ao resultado da automação:
-
-👉 [**Clique aqui para assistir ao vídeo do projeto final (projeto_final_web.mp4)**](https://github.com/carolinecunha-coder/python-video-etl-automation/raw/main/ajuste_video.py/projeto_final_web.mp4)
