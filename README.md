@@ -82,7 +82,7 @@ bitrate="2500k"
 # 🎬 Demonstração do Resultado Final
 
 <video 
-src="https://raw.githubusercontent.com/carolinecunha-coder/python-video-etl-automation/main/ajuste_video.py/projeto_github.mp4" 
+src="./projeto_github.mp4" 
 controls 
 width="900">
 </video>
@@ -91,9 +91,7 @@ width="900">
 
 # ▶ Assistir Diretamente
 
-👉 [Clique aqui para assistir ao vídeo](https://raw.githubusercontent.com/carolinecunha-coder/python-video-etl-automation/main/ajuste_video.py/projeto_github.mp4)
-
----
+👉 [Clique aqui para assistir ao vídeo](./projeto_github.mp4)
 
 # 📈 Conceitos Aplicados
 
