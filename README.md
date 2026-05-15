@@ -34,8 +34,10 @@ O objetivo principal foi aplicar conceitos de Engenharia de Dados e ETL (Extract
 ```bash
 python-video-etl-automation/
 │
-├── ajuste_video.py
-├── projeto_final_web.mp4
+├── ajuste_video.py/
+│   ├── limpar_video.py
+│   └── projeto_final_web.mp4
+│
 └── README.md
 ```
 
@@ -109,7 +111,7 @@ Com otimização de bitrate para carregamento mais rápido no GitHub.
 Assista abaixo ao vídeo processado pelo pipeline:
 
 <video 
-src="https://github.com/carolinecunha-coder/python-video-etl-automation/raw/main/projeto_final_web.mp4" 
+src="https://github.com/carolinecunha-coder/python-video-etl-automation/raw/main/ajuste_video.py/projeto_final_web.mp4" 
 controls 
 width="900">
 </video>
@@ -118,7 +120,7 @@ width="900">
 
 👉 Caso o player não carregue:
 
-[Clique aqui para assistir diretamente](https://github.com/carolinecunha-coder/python-video-etl-automation/raw/main/projeto_final_web.mp4)
+[Clique aqui para assistir diretamente](https://github.com/carolinecunha-coder/python-video-etl-automation/raw/main/ajuste_video.py/projeto_final_web.mp4)
 
 ---
 
@@ -176,8 +178,4 @@ Em transição para Data Analytics e Engenharia de Dados.
 🔗 GitHub:  
 https://github.com/carolinecunha-coder
 
-🔗 LinkedIn:  
-https://www.linkedin.com/in/caroline-sc-lopes
-
 ---
-
