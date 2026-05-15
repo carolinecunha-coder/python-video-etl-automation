@@ -81,17 +81,15 @@ bitrate="2500k"
 
 # 🎬 Demonstração do Resultado Final
 
-<video 
-src="./projeto_github.mp4" 
-controls 
-width="900">
-</video>
+👉 Clique na imagem abaixo para assistir ao vídeo:
+
+[![Assistir vídeo](https://img.shields.io/badge/▶-Assistir%20Demonstração-blue?style=for-the-badge)](./projeto_github.mp4)
 
 ---
 
-# ▶ Assistir Diretamente
+# ▶ Link Direto
 
-👉 [Clique aqui para assistir ao vídeo](./projeto_github.mp4)
+[Abrir vídeo diretamente](./projeto_github.mp4)
 
 # 📈 Conceitos Aplicados
 
