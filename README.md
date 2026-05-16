@@ -102,7 +102,7 @@ Configurações utilizadas:
 
 # 📹 Vídeo Completo
 
-[▶ Clique aqui para assistir ao vídeo completo](./ajuste_video.py/projeto_github.mp4)
+[▶ Clique aqui para assistir ao vídeo completo](https://raw.githubusercontent.com/carolinecunha-coder/python-video-etl-automation/main/ajuste_video.py/projeto_github.mp4)
 ---
 
 # 💻 Código Principal
