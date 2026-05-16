@@ -96,14 +96,13 @@ Configurações utilizadas:
 
 # 🎞 Prévia da Automação
 
-![Preview do Projeto](./preview.gif)
+![Preview do Projeto](./ajuste_video.py/preview.gif)
 
 ---
 
 # 📹 Vídeo Completo
 
-[▶ Clique aqui para assistir ao vídeo completo](./projeto_github.mp4)
-
+[▶ Clique aqui para assistir ao vídeo completo](./ajuste_video.py/projeto_github.mp4)
 ---
 
 # 💻 Código Principal
