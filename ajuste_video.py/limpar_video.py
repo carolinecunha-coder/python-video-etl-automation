@@ -3,8 +3,8 @@ from moviepy import VideoFileClip
 
 # Caminhos
 pasta = r"C:\Projetos\ajuste_video.py"
-arquivo_atual = os.path.join(pasta, "projeto_final.mp4")
-arquivo_reduzido = os.path.join(pasta, "projeto_final_web.mp4")
+arquivo_atual = os.path.join(pasta, "projeto_github.mp4")
+arquivo_reduzido = os.path.join(pasta, "video_otimizado.mp4")
 
 print("Reduzindo o tamanho do vídeo para o GitHub...")
 
