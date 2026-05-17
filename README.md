@@ -1,8 +1,10 @@
 # 🎥 Pipeline de Automação e Otimização de Vídeo com Python
 
-Projeto desenvolvido para automatizar o tratamento, compressão e padronização de arquivos de vídeo utilizando Python, MoviePy e FFmpeg.
+Arquivos de vídeo não padronizados que quebram em navegadores ou estouram o limite de upload do GitHub são gargalos comuns em automações de mídia.
 
-O objetivo foi criar um pipeline otimizado para web, compatível com GitHub e navegadores HTML5.
+Desenvolvido para mitigar essas dores, este projeto implementa um pipeline inteligente em Python 3.11 que atua na **limpeza e transformação de arquivos de vídeo**. A automação valida a integridade das dimensões exigidas pelo FFmpeg, aplica compressão de bitrate otimizada e força a conversão para codecs universais (`libx264`/`aac`), garantindo compatibilidade multiplataforma imediata.
+
+> 🛠 **Highlights:** Código Limpo | Tratamento de Erros em Tempo de Execução | Otimização de Performance Web
 
 ---
 
