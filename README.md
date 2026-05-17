@@ -111,15 +111,13 @@ Utilização da ferramenta EZGIF para gerar uma prévia animada da automação e
 # 🎞 Prévia da Automação
 
 <p align="center">
-  <img src="preview.gif" width="700">
+  <img src="ajuste_video.py/preview.gif" width="700">
 </p>
 
----
-
-# 📹 Vídeo Completo
-
 <p align="center">
-  <a href="projeto_github.mp4">▶ Clique aqui para assistir ao vídeo completo</a>
+  <a href="ajuste_video.py/projeto_github.mp4">
+    ▶ Clique aqui para assistir ao vídeo completo
+  </a>
 </p>
 
 ---
