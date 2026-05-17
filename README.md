@@ -6,7 +6,7 @@ Este projeto implementa um pipeline inteligente em Python 3.11 para limpeza, pad
 
 ---
 
-## 🛠 Highlights
+# 🛠 Highlights
 
 ✅ Código Limpo  
 ✅ Tratamento de Erros em Tempo de Execução  
@@ -42,10 +42,11 @@ Este projeto implementa um pipeline inteligente em Python 3.11 para limpeza, pad
 # 📂 Estrutura do Projeto
 
 ```bash
-ajuste_video.py/
-├── limpar_video.py
-├── projeto_github.mp4
-├── preview.gif
+python-video-etl-automation/
+├── ajuste_video.py/
+│   ├── limpar_video.py
+│   ├── preview.gif
+│   └── video_otimizado.mp4
 └── README.md
 ```
 
@@ -99,7 +100,7 @@ Garantindo melhor performance de upload e reprodução online.
 
 Utilização da ferramenta EZGIF para gerar uma prévia animada da automação exibida diretamente no README do GitHub.
 
-### Configurações utilizadas:
+### Configurações utilizadas
 
 - 720p
 - FPS 10
@@ -114,8 +115,12 @@ Utilização da ferramenta EZGIF para gerar uma prévia animada da automação e
   <img src="ajuste_video.py/preview.gif" width="700">
 </p>
 
+---
+
+# 📹 Vídeo Completo
+
 <p align="center">
-  <a href="ajuste_video.py/projeto_github.mp4">
+  <a href="https://raw.githubusercontent.com/carolinecunha-coder/python-video-etl-automation/main/ajuste_video.py/video_otimizado.mp4">
     ▶ Clique aqui para assistir ao vídeo completo
   </a>
 </p>
@@ -130,7 +135,7 @@ from moviepy import VideoFileClip
 
 pasta = r"C:\Projetos\ajuste_video.py"
 
-arquivo_atual = os.path.join(pasta, "projeto_github.mp4")
+arquivo_atual = os.path.join(pasta, "video_otimizado.mp4")
 
 video = VideoFileClip(arquivo_atual)
 
@@ -157,7 +162,7 @@ video.write_videofile(
 
 # 🌐 Ferramenta Utilizada para Conversão GIF
 
-### EZGIF
+## EZGIF
 
 🔗 https://ezgif.com/video-to-gif
 
@@ -187,4 +192,3 @@ Em transição para Data Analytics e Engenharia de Dados.
 # 🔗 GitHub
 
 🔗 https://github.com/carolinecunha-coder
-
